@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+ <style>
+    body{
+        margin: 0;
+        height: 99vh;
+       background:  linear-gradient(45deg, red 200%, blue 150%);
+       animation: gradientMove 8s ease infinite;
+       }
+       
+    header{
+        text-align: center;
+        font-family: Impact;
+        color: darkorchid;
+        
+
+    }
+    nav{
+        display:flex;
+        justify-content: center;
+        align-items:center;
+        gap:25px;
+        border-radius: 25px;
+    }
+    .menu-item{
+        text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    display: inline-block;
+    border: 3px solid white;
+    border-radius: 20px;
+    cursor:pointer;
+    }
+     
+    @keyframes gradientMove{
+        0%{
+            background-position:0% 50%;
+        }
+        50%{
+            background-position:100% 50%;
+
+        }
+        100%{
+            background-position:0% 50%
+
+        }
+    
+    
+    }
+ </style>
+<body>
+    <header><h1><b>
+        University of Health Sciences
+      </b></h1></header>
+      <nav>
+        <div class="menu-item">main </div>
+        <div class="menu-item">about </div>
+        <div class="menu-item">major </div>
+        <div class="menu-item">activity </div>
+        <div class="menu-item">news </div>
+    </nav>
+    <div class="main">
+        <div class="section">
+            <div class="header">
+                <div class="article">
+                    <div class="aside">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

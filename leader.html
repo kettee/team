@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leader Introduction</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .container {
+            display: flex;
+            align-items: center;
+            gap: 60px;
+            max-width: 1200px;
+            padding: 40px;
+        }
+
+        .info-section {
+            flex: 1;
+            padding: 40px;
+            animation: slideInLeft 0.8s ease-out;
+        }
+
+        .image-section {
+            flex: 1;
+            animation: slideInRight 0.8s ease-out;
+        }
+
+        .info-section h1 {
+            font-size: 3em;
+            color: white;
+            margin-bottom: 15px;
+            animation: fadeInDown 1s ease-out;
+        }
+
+        .info-section .title {
+            font-size: 1.5em;
+            color: #ffd700;
+            margin-bottom: 20px;
+            animation: fadeInUp 1s ease-out 0.2s both;
+        }
+
+        .info-section p {
+            font-size: 1.1em;
+            color: #e0e0e0;
+            line-height: 1.8;
+            margin-bottom: 20px;
+            animation: fadeInUp 1s ease-out 0.4s both;
+        }
+
+        .portfolio-link {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 30px;
+            background: #ffd700;
+            color: #333;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            animation: fadeInUp 1s ease-out 0.6s both;
+        }
+
+        .portfolio-link:hover {
+            background: white;
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+        }
+
+        .image-section img {
+            width: 100%;
+            border-radius: 100px;
+            animation: scaleIn 0.8s ease-out;
+            text-align: center;
+            animation: fadeInUp 1s ease-in 0.6s both;
+            
+        }
+
+        @keyframes slideInLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-100px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes slideInRight {
+            from {
+                opacity: 0;
+                transform: translateX(100px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes scaleIn {
+            from {
+                opacity: 0;
+                transform: scale(0.95);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                gap: 30px;
+            }
+
+            .info-section h1 {
+                font-size: 2em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="info-section">
+            <h1>Dr ketsada XAYYAVONG</h1>
+            <p class="title">Leader of Medical 56 </p>
+            <p>With over 10 years of experience in software development and team leadership, I guide talented teams to build exceptional products. My passion lies in creating innovative solutions and mentoring the next generation of developers.</p>
+            <p>Specializing in full-stack development, I've led multiple successful projects combining technical expertise with strong leadership skills.</p>
+          
+        </div>
+        <div class="image-section">
+            <img src="leader.jpg.png" alt="Leader Portrait"  width="200" >
+        </div>
+    </div>
+</body>
+</html>

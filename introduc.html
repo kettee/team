@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Introduction</title>
+    <style>
+       
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+           
+            min-height: 100vh;
+            padding: 40px 20px;
+            background-image: linear-gradient(135deg, #ea6d66 0%, #4b51a285 100%),url("manage.png");
+            margin: 0;
+            height: 100vh;
+            background-position:center;
+            background-size: cover;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .header {
+            text-align: center;
+            color: white;
+            margin-bottom: 60px;
+            animation: fadeInDown 0.8s ease-out;
+        }
+
+        .header h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .header p {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+
+        .team-card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            animation: fadeInUp 0.8s ease-out both;
+        }
+
+        .team-card:nth-child(1) { animation-delay: 0.1s; }
+        .team-card:nth-child(2) { animation-delay: 0.2s; }
+        .team-card:nth-child(3) { animation-delay: 0.3s; }
+        .team-card:nth-child(4) { animation-delay: 0.4s; }
+        .team-card:nth-child(ຸຸ5) { animation-delay: 0.4s; }
+
+        .team-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+        }
+
+        .card-image {
+            width: 100%;
+            height: 250px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 80px;
+            color: white;
+        }
+
+        .card-content {
+            padding: 25px;
+            text-align: center;
+        }
+
+        .card-name {
+            font-size: 1.5em;
+            color: #333;
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+
+        .card-role {
+            font-size: 1.1em;
+            color: #667eea;
+            font-weight: bold;
+            margin-bottom: 15px;
+            position: relative;
+            display: inline-block;
+        }
+
+        .card-role::before {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: #667eea;
+            transition: width 0.3s ease;
+        }
+
+        .team-card:hover .card-role::before {
+            width: 100%;
+        }
+
+        .card-description {
+            color: #666;
+            font-size: 0.95em;
+            line-height: 1.6;
+        }
+
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2em;
+            }
+            .team-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+   
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Our Team</h1>
+            <p>3 ໂຕຕິງ</p>
+        </div>
+
+         <a href="leader.html">
+        <div class="team-grid">
+            <!-- Team Member 1 -->
+             
+            <div class="team-card" >
+                <div class="card-image"  >
+                    <img src="./leader.png" alt="Leader" width="175" height="250">
+                </div>
+                <div class="card-content">
+                   
+                    <div class="card-name">Dr ketsada</div>
+                    <div class="card-role">no comment</div>
+                    <p class="card-description">God</p>
+                    
+                </div>
+            </div>
+            </a>
+
+            <!-- Team Member 2 -->
+             <a href="fg.html">
+            <div class="team-card">
+                <div class="card-image">
+                    <img src="manage.png" alt="manager"  height="250">
+                </div>
+                <div class="card-content">
+                    <div class="card-name">Bounma </div>
+                    <div class="card-role">ໂຕເປີດ</div>
+                    <p class="card-description">ເປີດຫມົດບໍ່ສົນບັກເກດ</p>
+                </div>
+            </div>
+            </a>
+
+            <!-- Team Member 3 -->
+            <div class="team-card">
+                <div class="card-image">
+                    <img src="ta.png" alt="pvc" height="250">
+                </div>
+                <div class="card-content">
+                    <div class="card-name">Buk am</div>
+                    <div class="card-role">ໂຕຫາເລື່ອງ</div>
+                    <p class="card-description">ເຈິໄດ້</p>
+                </div>
+            </div>
+            
+
+            <!-- Team Member 4 -->
+            <div class="team-card">
+                <div class="card-image"><img src="on.png" alt="on ery" height="250">
+                </div>
+                <div class="card-content">
+                    <div class="card-name">ໂຕແທນນະຄອນຫລວງ</div>
+                    <div class="card-role">1000ແກ້ວ</div>
+                    <p class="card-description">ກອບກູ້ຊື່ສຽງ</p>
+                </div>
+            </div>
+        
+    
+            <div class="team-card">
+                <div class="card-image"><img src="min.png" alt="j min" width="320px" style="margin-top: 100px; margin-left: 80px;">
+                </div>
+                <div class="card-content">
+                    <div class="card-name">ຫົວຫນ້າ</div>
+                    <div class="card-role">ໂຕແກ້ທາງບຸນມາ</div>
+                    <p class="card-description">ໂຕຄວບຄຸມສະຖານະການ</p>
+                </div>
+            </div>
+        </div>
+    </div>
+     
+</body>
+</html>
